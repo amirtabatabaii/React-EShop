@@ -1,0 +1,14 @@
+.products__list {
+  margin: 1rem;
+}
+
+.product__cat {
+  color: brown;
+  text-decoration: none;
+}
+
+.product__cat:hover {
+  color: crimson;
+  font-weight: bold;
+  text-decoration: none;
+}

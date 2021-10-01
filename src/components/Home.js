@@ -1,39 +1,21 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
-import NavBar from "./NavBar";
 import RandomProducts from "./RandomProducts";
 import MostVisited from "./MostVisited";
-import Footer from "./Footer";
-import CategoryList from "./CategoryList";
+import Layout from "../utility/Layout";
 
-function Home() {
+function Home(props) {
   return (
-    <>
-      <NavBar />
-      <div>
-        <Row className='w-100'>
-          <div className='d-flex justify-content-between'>
-            <Col xs={12} sm={12} md={12} lg={8}>
-              <Col>
-                <RandomProducts />
-              </Col>
+    <Layout>
+      <Col>
+        <RandomProducts />
+      </Col>
 
-              <Col>
-                <MostVisited />
-              </Col>
-            </Col>
-
-            <Col>
-              <CategoryList />
-            </Col>
-          </div>
-          <div>
-            <Footer />
-          </div>
-        </Row>
-      </div>
-    </>
+      <Col>
+        <MostVisited />
+      </Col>
+    </Layout>
   );
 }
 

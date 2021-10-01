@@ -1,9 +1,18 @@
-import { PRODUCTS_LIST } from "./types";
+import { CATEGORY_LIST, CATEGORY_PRODUCTS_LIST } from "./types";
 
-// get Products List
-export const getProductsDetails = (list) => (dispatch) => {
+// get Category List
+export const getCategoryList = (listOfCategory) => (dispatch) => {
   dispatch({
-    type: PRODUCTS_LIST,
-    payload: { list },
+    type: CATEGORY_LIST,
+    payload: { listOfCategory },
   });
 };
+
+// get Category Products List
+export const getCategoryProductsList =
+  (listOfCategoryProducts) => (dispatch) => {
+    dispatch({
+      type: CATEGORY_PRODUCTS_LIST,
+      payload: { listOfCategoryProducts },
+    });
+  };
