@@ -26,7 +26,7 @@ function Home(props) {
       <Col>
         <RandomProducts
           productDetail={listOfRandomProducts.slice(4, 5)}
-          listOfRandomProducts={listOfRandomProducts.slice(5, 9)}
+          ProductsList={listOfRandomProducts.slice(5, 9)}
         />
       </Col>
 

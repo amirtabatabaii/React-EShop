@@ -4,7 +4,7 @@ import Layout from "../utility/Layout";
 import MostVisited from "./MostVisited";
 
 function ProductDetail(props) {
-  const { id, title, image, price, text, ProductsList } = props.location.state;
+  const { title, image, price, text, ProductsList } = props.location.state;
 
   return (
     <Layout>

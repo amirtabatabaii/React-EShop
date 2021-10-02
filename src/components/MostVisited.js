@@ -9,7 +9,7 @@ function MostVisited(props) {
   return (
     <Scroll height={"auto"}>
       <div id='card__list'>
-        <p className='most__header'>{title}</p>
+        <p className='card__list--header'>{title}</p>
         <CardList
           Lists={ProductsList}
           ColSize={3}

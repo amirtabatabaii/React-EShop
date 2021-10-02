@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import NavBar from "./components/NavBar";
 import { PersistGate } from "redux-persist/integration/react";
 
 import { Provider } from "react-redux";
