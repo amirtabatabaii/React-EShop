@@ -1,8 +1,10 @@
-import { CATEGORY_LIST, CATEGORY_PRODUCTS_LIST } from "./types";
+import {
+  CATEGORY_LIST,
+  CATEGORY_PRODUCTS_LIST,
+  RANDOM_PRODUCTS_LIST,
+} from "./types";
 
-import initialState from "./store";
-
-export default function (state = initialState, action) {
+export default function (state, action) {
   switch (action.type) {
     case CATEGORY_LIST:
       return {
@@ -14,6 +16,12 @@ export default function (state = initialState, action) {
       return {
         ...state,
         listOfCategoryProducts: action.payload.listOfCategoryProducts,
+      };
+
+    case RANDOM_PRODUCTS_LIST:
+      return {
+        ...state,
+        listOfRandomProducts: action.payload.listOfRandomProducts,
       };
 
     default:

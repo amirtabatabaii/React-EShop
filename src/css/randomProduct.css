@@ -1,0 +1,62 @@
+#random__product {
+  background-color: rgb(227, 243, 227);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  margin: 1rem 2rem;
+}
+
+.random__product--img {
+  border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+
+.random__product--title {
+  text-align: center !important;
+  color: rgb(0, 87, 128);
+  font-size: 2.3rem;
+  text-decoration: none;
+}
+
+.random__product--text {
+  text-align: left;
+  color: rgb(8, 144, 207);
+  font-size: 1.2rem;
+}
+
+.random__product--price {
+  text-align: left;
+  color: rgb(0, 87, 128);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 979px) {
+  .random__product--img {
+    border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    border: 0px solid #000000;
+  }
+}
+
+@media (max-width: 1200px) {
+  .random__product--title {
+    font-size: 1.7rem;
+    text-decoration: none !important;
+  }
+
+  .random__product--text {
+    font-size: 1rem;
+  }
+
+  .random__product--price {
+    font-size: 1rem;
+    text-shadow: none;
+    font-weight: 700;
+  }
+}

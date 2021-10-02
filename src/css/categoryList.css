@@ -12,3 +12,22 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+.products__header {
+  text-align: center;
+  color: brown;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 10px;
+  text-shadow: 1px 1px brown;
+}
+
+#products {
+  background-color: rgb(227, 243, 227);
+  border-radius: 20px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  margin-top: 1rem;
+}

@@ -1,4 +1,8 @@
-import { CATEGORY_LIST, CATEGORY_PRODUCTS_LIST } from "./types";
+import {
+  CATEGORY_LIST,
+  CATEGORY_PRODUCTS_LIST,
+  RANDOM_PRODUCTS_LIST,
+} from "./types";
 
 // get Category List
 export const getCategoryList = (listOfCategory) => (dispatch) => {
@@ -16,3 +20,11 @@ export const getCategoryProductsList =
       payload: { listOfCategoryProducts },
     });
   };
+
+// get Random Products List
+export const getRandomProductsList = (listOfRandomProducts) => (dispatch) => {
+  dispatch({
+    type: RANDOM_PRODUCTS_LIST,
+    payload: { listOfRandomProducts },
+  });
+};

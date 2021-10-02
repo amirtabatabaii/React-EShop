@@ -5,8 +5,8 @@ const Scroll = (props) => {
     <div
       style={{
         overflow: "auto",
-        width: "98.8%",
-        height: "80vh",
+        width: "auto",
+        height: props.height,
       }}
     >
       {props.children}

@@ -1,10 +1,24 @@
 import React from "react";
 
-function MostVisited() {
+import Scroll from "../utility/Scroll";
+import CardList from "./ui/CardList";
+
+function MostVisited(props) {
+  const { title, start, end, ProductsList } = props;
+
   return (
-    <div>
-      <h1>Most Visited</h1>
-    </div>
+    <Scroll height={"auto"}>
+      <div id='card__list'>
+        <p className='most__header'>{title}</p>
+        <CardList
+          Lists={ProductsList}
+          ColSize={3}
+          mainPage={false}
+          start={start}
+          end={end}
+        />
+      </div>
+    </Scroll>
   );
 }
 

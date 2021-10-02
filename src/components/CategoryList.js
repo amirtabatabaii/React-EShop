@@ -6,10 +6,15 @@ function CategoryList(props) {
   const { listOfCategory } = props;
 
   return (
-    <div className='d-none d-lg-block'>
-      <Scroll>
+    <div className='d-none d-lg-block ' id='products'>
+      <div className='products__header'>All Category</div>
+      <Scroll height={"48rem"}>
         {listOfCategory.map((cat) => (
-          <h5 className='products__list' onClick={() => props.onClick(cat.id)}>
+          <h5
+            key={cat.id}
+            className='products__list'
+            onClick={() => props.onClick(cat.id)}
+          >
             <Link
               className='product__cat'
               to={{
