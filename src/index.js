@@ -8,10 +8,10 @@ import { Provider } from "react-redux";
 import { store, PersistedStore } from "./redux/store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/index.css";
-import "./css/scroll.css";
-import "./css/categoryList.css";
-import "./css/randomProduct.css";
+import "./css/index.scss";
+import "./css/scroll.scss";
+import "./css/categoryList.scss";
+import "./css/randomProduct.scss";
 import "./css/cardList.scss";
 
 ReactDOM.render(
